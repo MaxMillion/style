@@ -1,0 +1,23 @@
+// Resist the temptation to define lots of default styles in here!
+
+// Normalize.css plus these few additions are all you need for a small,
+// stable set of core styles to build all your modules & utilities upon.
+
+@import "config/font_stacks"
+@import "config/colors"
+
+html
+  box-sizing: border-box
+  font-family: $helvetica
+  height: 100%
+
+// http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*,
+*:before,
+*:after
+  box-sizing: inherit
+
+body
+  background-color: $white
+  height: 100%
+  margin: 0
